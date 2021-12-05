@@ -1,0 +1,16 @@
+{
+  "name": "astro-analytics",
+  "version": "1.0.0",
+  "description": "Analytics components for Astro",
+  "main": "src/index.js",
+  "author": "Timur Badretdinov <destinerx@gmail.com>",
+  "keywords": [
+    "astro-component",
+    "analytics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Destiner/astro-analytics.git"
+  },
+  "license": "MIT"
+}
