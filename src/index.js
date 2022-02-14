@@ -4,8 +4,8 @@ import Metrical from './Metrical.astro';
 import SimpleAnalytics from './SimpleAnalytics.astro';
 
 export {
-	Fathom,
-	GoogleAnalytics,
-	Metrical,
-	SimpleAnalytics,
+  Fathom,
+  GoogleAnalytics,
+  Metrical,
+  SimpleAnalytics,
 };
