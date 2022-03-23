@@ -1,6 +1,6 @@
 {
   "name": "astro-analytics",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Analytics components for Astro",
   "type": "module",
   "exports": "./src/index.js",
