@@ -6,6 +6,7 @@ Supported services:
 * Google Analytics
 * Simple Analytics
 * Fathom
+* Plausible
 * Metrical
 
 ## Installation
@@ -24,5 +25,6 @@ import { Fathom } from 'astro-analytics';
 <Fathom site="ABCDEF" />
 <GoogleAnalytics id="UA-156492295-1" />
 <Metrical app="j5gZ1K26a" />
+<Plausible domain="yourdomain.com" />
 <SimpleAnalytics />
 ```
