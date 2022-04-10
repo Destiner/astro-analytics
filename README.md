@@ -25,6 +25,6 @@ import { Fathom } from 'astro-analytics';
 <Fathom site="ABCDEF" />
 <GoogleAnalytics id="UA-156492295-1" />
 <Metrical app="j5gZ1K26a" />
-<Plausible domain="yourdomain.com" />
+<Plausible domain="yourdomain.com" src="https://youdomain.com/yoursript.js" /> (if no src is set it will fallback to https://plausible.io/js/script.js)
 <SimpleAnalytics />
 ```
