@@ -1,0 +1,9 @@
+---
+export interface Props {
+  site: string;
+  host: string;
+}
+
+const { site, host, path = '/umami.js' } = Astro.props;
+---
+<script src={host}{path} data-website-id={site} defer></script>
