@@ -3,12 +3,13 @@
 _A collection of Astro components for popular app analytics providers_
 
 Supported services:
-* Google Analytics
-* Simple Analytics
 * Fathom
-* Plausible
+* Google Analytics
 * Metrical
-
+* Plausible
+* Simple Analytics
+* Umami
+  
 ## Installation
 
 ```bash
