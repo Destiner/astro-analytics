@@ -1,9 +1,10 @@
 ---
 export interface Props {
   site: string;
+  dataId: string;
   host: string;
 }
 
-const { site, host, path = '/umami.js' } = Astro.props;
+const { dataId, site, host = '/umami.js' } = Astro.props;
 ---
-<script src={host}{path} data-website-id={site} defer></script>
+<script defer src={site}{host} data-website-id={dataId}></script>

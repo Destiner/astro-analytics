@@ -3,6 +3,7 @@ import GoogleAnalytics from './GoogleAnalytics.astro';
 import Metrical from './Metrical.astro';
 import Plausible from './Plausible.astro';
 import SimpleAnalytics from './SimpleAnalytics.astro';
+import Umami from './Umami.astro';
 
 export {
   Fathom,
@@ -10,4 +11,5 @@ export {
   Metrical,
   Plausible,
   SimpleAnalytics,
+  Umami
 };
