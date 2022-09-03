@@ -1,14 +1,29 @@
-# Astro Analytics
+# Astro Analytics 📈
 
 _A collection of Astro components for popular web analytics tools
 
 Supported services:
-* Fathom
-* Google Analytics
-* Metrical
-* Plausible
-* Simple Analytics
-* Umami
+* [x] ![Fathom Logo](docs/fathom.webp) Fathom
+  * [Website](https://usefathom.com)
+  * [Live Demo](https://app.usefathom.com/demo)
+* [x] ![Google Analytics Logo](docs/ga.webp) Google Analytics
+  * [Website](https://developers.google.com/analytics)
+* [x] ![Metrical Logo](docs/metrical.webp) Metrical
+  * [Website](https://metrical.xyz)
+  * [Live Demo](https://app.metrical.xyz/demo)
+* [x] ![Plausible Logo](docs/plausible.webp) Plausible
+  * [Website](https://plausible.io)
+  * [Live Demo](https://plausible.io/plausible.io)
+  * [GitHub](https://github.com/plausible/analytics)
+* [x] ![Plausible Logo](docs/simpleanalytics.webp) Simple Analytics
+  * [Website](https://simpleanalytics.com/)
+  * [Live Demo](https://simpleanalytics.com/simpleanalytics.com)
+* [x] ![Umami Logo](docs/umami.webp) Umami
+  * [Website](https://umami.is)
+  * [Live Demo](https://app.umami.is/share/8rmHaheU/umami.is)
+  * [GitHub](https://github.com/umami-software/umami)
+* [ ] ![Matomo Logo](docs/matomo.webp) Matomo
+  * [Website](https://matomo.org)
   
 ## Installation
 
