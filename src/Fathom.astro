@@ -1,8 +1,9 @@
 ---
 export interface Props {
   site: string;
+  src: string | undefined;
 }
 
-const { site } = Astro.props;
+const { site, src = 'https://cdn.usefathom.com/script.js'} = Astro.props;
 ---
-<script src="https://cdn.usefathom.com/script.js" data-site={site} defer></script>
+<script src={src} data-site={site} defer></script>
