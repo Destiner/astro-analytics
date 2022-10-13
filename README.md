@@ -1,6 +1,6 @@
 # Astro Analytics 📈
 
-_A collection of Astro components for popular web analytics tools
+_A collection of Astro components for popular web analytics tools_
 
 Supported services:
 * [x] ![Fathom Logo](docs/fathom.webp) Fathom
