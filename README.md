@@ -22,6 +22,10 @@ Supported services:
   * [Website](https://umami.is)
   * [Live Demo](https://app.umami.is/share/8rmHaheU/umami.is)
   * [GitHub](https://github.com/umami-software/umami)
+* [x] ![Amplitude Logo](docs/amplitude.webp) Amplitude
+  * [Website](https://amplitude.com/)
+  * [Live Demo](https://analytics.amplitude.com/login/my-demo)
+  * [GitHub](https://github.com/amplitude)
 * [ ] ![Matomo Logo](docs/matomo.webp) Matomo
   * [Website](https://matomo.org)
   
