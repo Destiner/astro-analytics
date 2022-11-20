@@ -6,22 +6,26 @@ Supported services:
 * [x] ![Fathom Logo](docs/fathom.webp) Fathom
   * [Website](https://usefathom.com)
   * [Live Demo](https://app.usefathom.com/demo)
+  * script.js - 5,95 KB
 * [x] ![Google Analytics Logo](docs/ga.webp) Google Analytics
   * [Website](https://developers.google.com/analytics)
 * [x] ![Metrical Logo](docs/metrical.webp) Metrical
   * [Website](https://metrical.xyz)
   * [Live Demo](https://app.metrical.xyz/demo)
+  * script.js - 2,48 KB
 * [x] ![Plausible Logo](docs/plausible.webp) Plausible
   * [Website](https://plausible.io)
   * [Live Demo](https://plausible.io/plausible.io)
   * [GitHub](https://github.com/plausible/analytics)
-* [x] ![Plausible Logo](docs/simpleanalytics.webp) Simple Analytics
+  * plausible.js 1,30 KB 🥇
+* [x] ![Simple Analytics Logo](docs/simpleanalytics.webp) Simple Analytics
   * [Website](https://simpleanalytics.com/)
   * [Live Demo](https://simpleanalytics.com/simpleanalytics.com)
 * [x] ![Umami Logo](docs/umami.webp) Umami
   * [Website](https://umami.is)
   * [Live Demo](https://app.umami.is/share/8rmHaheU/umami.is)
   * [GitHub](https://github.com/umami-software/umami)
+  * umami.js - 2,75 KB
 * [x] ![Amplitude Logo](docs/amplitude.webp) Amplitude
   * [Website](https://amplitude.com/)
   * [Live Demo](https://analytics.amplitude.com/login/my-demo)
