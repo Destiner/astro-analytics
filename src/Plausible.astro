@@ -2,7 +2,7 @@
 
 export interface Props {
   domain: string;
-  src: string | undefined;
+  src?: string;
 }
 
 const { domain, src = 'https://plausible.io/js/script.js' } = Astro.props;
