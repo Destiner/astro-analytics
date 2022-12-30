@@ -5,8 +5,12 @@
   "type": "module",
   "author": "Timur Badretdinov <destinerx@gmail.com>",
   "keywords": [
+    "astro",
     "astro-component",
-    "analytics"
+    "astro-integration",
+    "analytics",
+    "stats",
+    "tracking"
   ],
   "repository": {
     "type": "git",
