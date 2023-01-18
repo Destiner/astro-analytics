@@ -1,5 +1,6 @@
 import Fathom from "./src/Fathom.astro";
 import GoogleAnalytics from "./src/GoogleAnalytics.astro";
+import Matomo from './src/Matomo.astro';
 import Metrical from "./src/Metrical.astro";
 import Plausible from "./src/Plausible.astro";
 import SimpleAnalytics from "./src/SimpleAnalytics.astro";
@@ -14,4 +15,5 @@ export {
   SimpleAnalytics,
   Umami,
   Amplitude,
+  Matomo,
 };

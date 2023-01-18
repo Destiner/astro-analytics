@@ -30,7 +30,7 @@ Supported services:
   * [Website](https://amplitude.com)
   * [Live Demo](https://analytics.amplitude.com/login/my-demo)
   * [GitHub](https://github.com/amplitude)
-* [ ] ![Matomo Logo](docs/matomo.webp) Matomo
+* [x] ![Matomo Logo](docs/matomo.webp) Matomo
   * [Website](https://matomo.org)
 * [ ] 🌱 Minimalanalytics
   * [Website](https://minimalanalytics.com)
@@ -60,4 +60,5 @@ import { Fathom } from 'astro-analytics';
 <Plausible domain="yourdomain.com" src="https://youdomain.com/yoursript.js" /> (if no src is set it will fallback to https://plausible.io/js/script.js)
 <SimpleAnalytics />
 <Umami id="4fb7fa4c-5b46-438d-94b3-3a8fb9bc2e8b" src="https://your-umami-app.com/umami.js" />
+<Matomo id="1" src="https://yourdomain.com" />
 ```
