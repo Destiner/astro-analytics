@@ -1,0 +1,108 @@
+---
+/**  
+
+* ! These are the options for web analytics  
+
+*/
+type Options = {
+  params: { [s: string]: any } | ArrayLike<any>;
+  path: string;
+  analyticsId: string;
+  debug: boolean;
+};
+
+/**
+ * ! The version is the version of the vercel analytics. The assumption is that things won't change.
+ * ! The only two options that must be choosen by the user is the analyticsId and the debug
+ **  The other two options will be provided by the page look at the function at the bottom.
+ */
+type Props = {
+  version: number;
+  options: Omit<Options, "params" | "path">;
+};
+
+const {
+  version,
+  options: { analyticsId, debug },
+} = Astro.props;
+---
+
+<script define:vars={{ version, analyticsId, debug }}>
+  /**
+   * This is the library that must be installed for this one to work.
+   *
+   *
+   */
+  import { onCLS, onFCP, onFID, onLCP, onTTFB } from "web-vitals";
+  {
+    const vitalsUrl = `https://vitals.vercel-analytics.com/v${version}/vitals`;
+
+    function getConnectionSpeed() {
+      return "connection" in navigator &&
+        navigator["connection"] &&
+        typeof navigator["connection"] === "object" &&
+        "effectiveType" in navigator["connection"]
+        ? navigator["connection"]["effectiveType"]
+        : "";
+    }
+
+    //
+
+    function sendToAnalytics(metric, options) {
+      const page = Object.entries(options.params).reduce(
+        (acc, [key, value]) => acc.replace(value, `[${key}]`),
+        options.path
+      );
+
+      const body = {
+        dsn: options.analyticsId,
+        id: metric.id,
+        page,
+        href: location.href,
+        event_name: metric.name,
+        value: metric.value.toString(),
+        speed: getConnectionSpeed(),
+      };
+
+      if (options.debug) {
+        console.log("[Analytics]", metric.name, JSON.stringify(body, null, 2));
+      }
+
+      const blob = new Blob([new URLSearchParams(body).toString()], {
+        // This content type is necessary for `sendBeacon`
+        type: "application/x-www-form-urlencoded",
+      });
+
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(vitalsUrl, blob);
+      } else
+        fetch(vitalsUrl, {
+          body: blob,
+          method: "POST",
+          credentials: "omit",
+          keepalive: true,
+        });
+    }
+
+    function webVitals(options) {
+      try {
+        onFID((metric) => sendToAnalytics(metric, options));
+        onTTFB((metric) => sendToAnalytics(metric, options));
+        onLCP((metric) => sendToAnalytics(metric, options));
+        onCLS((metric) => sendToAnalytics(metric, options));
+        onFCP((metric) => sendToAnalytics(metric, options));
+      } catch (err) {
+        console.error("[Analytics]", err);
+      }
+    }
+
+    if (analyticsId) {
+      webVitals({
+        analyticsId,
+        path: location.pathname,
+        params: location.search,
+        debug,
+      });
+    }
+  }
+</script>
