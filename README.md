@@ -33,11 +33,11 @@ Supported services:
   - [GitHub](https://github.com/amplitude)
 - [x] ![Matomo Logo](docs/matomo.webp) Matomo
   - [Website](https://matomo.org)
-- [ ] 🌱 Minimalanalytics
+- [x] 🌱 Minimalanalytics
   - [Website](https://minimalanalytics.com)
   - [Gist](https://gist.github.com/DavidKuennen/443121e692175d6fc145e1efb0284ec9)
   - script.js · 1.56 KB · 🥈
-- [] Vercel Analytics
+- [x] Vercel Analytics
   - [Website](https://vercel.com/docs/concepts/analytics)
 
 ## Installation
@@ -57,18 +57,18 @@ import { Fathom } from "astro-analytics";
 ```
 
 ```html
-<Fathom site="ABCDEF" src="https://youdomain.com/script.js" /> (if no src is set
-it will fallback to https://cdn.usefathom.com/script.js)
+- <Fathom site="ABCDEF" src="https://youdomain.com/script.js" /> (if no src is
+set it will fallback to https://cdn.usefathom.com/script.js)
+
 <GoogleAnalytics id="UA-156492295-1" />
 <Metrical app="j5gZ1K26a" />
-<Plausible domain="yourdomain.com" src="https://youdomain.com/yoursript.js" />
+- <Plausible domain="yourdomain.com" src="https://youdomain.com/yoursript.js" />
 (if no src is set it will fallback to https://plausible.io/js/script.js)
+
 <SimpleAnalytics />
-<Umami
-  id="4fb7fa4c-5b46-438d-94b3-3a8fb9bc2e8b"
-  src="https://your-umami-app.com/umami.js"
-/>
+- <Umami id="4fb7fa4c-5b46-438d-94b3-3a8fb9bc2e8b" src="https://your-umami-app.com/umami.js" />
+
 <Matomo id="1" src="https://yourdomain.com" />
-<VercelAnalytics version={1} options={{ analyticsId: string, debug: boolean }}
-/>
+
+<VercelAnalytics version={1} options={{ analyticsId: string, debug: boolean }} />
 ```
