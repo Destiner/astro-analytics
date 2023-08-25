@@ -6,7 +6,7 @@ import Plausible from "./src/Plausible.astro";
 import SimpleAnalytics from "./src/SimpleAnalytics.astro";
 import Umami from "./src/Umami.astro";
 import Amplitude from "./src/Amplitude.astro";
-import Minimalanalytics from "./src/Minimalanalytics.astro";
+import MinimalAnalytics from "./src/MinimalAnalyticss.astro";
 
 export {
   Fathom,
@@ -17,5 +17,5 @@ export {
   Umami,
   Amplitude,
   Matomo,
-  Minimalanalytics,
+  MinimalAnalytics,
 };
