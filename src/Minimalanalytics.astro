@@ -1,13 +1,12 @@
 ---
 export interface Props {
   id: string;
-  attributes?: string;
 }
 
-const { id, attributes } = Astro.props;
+const { id } = Astro.props;
 ---
 
-<script { ...attributes } define:vars={{id}} defer>
+<script define:vars={{id}} defer>
     (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
     h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
     l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
