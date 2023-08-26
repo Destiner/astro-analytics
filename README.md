@@ -61,5 +61,5 @@ import { Fathom } from 'astro-analytics';
 <SimpleAnalytics />
 <Umami id="4fb7fa4c-5b46-438d-94b3-3a8fb9bc2e8b" src="https://your-umami-app.com/umami.js" />
 <Matomo id="1" src="https://yourdomain.com" />
-<Minimalanalytics id="UA-156492295-1" />
+<MinimalAnalytics id="UA-156492295-1" />
 ```
