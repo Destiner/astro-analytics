@@ -32,7 +32,7 @@ Supported services:
   * [GitHub](https://github.com/amplitude)
 * [x] ![Matomo Logo](docs/matomo.webp) Matomo
   * [Website](https://matomo.org)
-* [ ] 🌱 Minimalanalytics
+* [X] 🌱 Minimalanalytics
   * [Website](https://minimalanalytics.com)
   * [Gist](https://gist.github.com/DavidKuennen/443121e692175d6fc145e1efb0284ec9)
   * script.js · 1.56 KB · 🥈
@@ -61,4 +61,5 @@ import { Fathom } from 'astro-analytics';
 <SimpleAnalytics />
 <Umami id="4fb7fa4c-5b46-438d-94b3-3a8fb9bc2e8b" src="https://your-umami-app.com/umami.js" />
 <Matomo id="1" src="https://yourdomain.com" />
+<MinimalAnalytics id="UA-156492295-1" />
 ```

@@ -1,6 +1,6 @@
 {
   "name": "astro-analytics",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "Analytics components for Astro",
   "type": "module",
   "author": "Timur Badretdinov <destinerx@gmail.com>",
